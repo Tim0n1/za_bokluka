@@ -11,7 +11,7 @@ loss, accuracy = model.evaluate(x_test, y_test)
 print(loss)
 print(accuracy)
 try:
-    img = cv2.imread('digit recognition/digits/d6.png')[:, :, 0]
+    img = cv2.imread('digit recognition/digits/d8.png')[:, :, 0]
     img = np.invert(np.array([img]))
     prediction = model.predict(img)
     print(prediction)
